@@ -2,7 +2,6 @@ import { NavLink, useLoaderData } from "react-router";
 import google from "../../../public/g-stor.png";
 import apple from "../../../public/a-stor.png";
 import hero from "../../../public/hero.png";
-import demo1 from "../../../public/demo-app-1.webp";
 
 import React from "react";
 
@@ -109,13 +108,13 @@ const Home = () => {
           {data.map((data) => (
             <div key={data.id} className=" bg-white rounded-xl shadow p-3">
               {/* Image Placeholder */}
-              <div className=" bg-gray-300 rounded-lg">
-                <img src={demo1} alt="" />
+              <div className="flex items-center justify-center rounded-lg">
+                <img src={data.image} alt="" />
               </div>
 
               {/* Title */}
               <h3 className="mt-3 text-sm font-semibold text-gray-800">
-                {data.companyName}
+                {data.title}
               </h3>
 
               {/* Footer */}
