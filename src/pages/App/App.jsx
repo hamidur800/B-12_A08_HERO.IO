@@ -1,9 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class App extends Component {
-  render() {
-    return <div>App</div>;
-  }
-}
+const App = () => {
+  return <div>hami</div>;
+};
 
 export default App;

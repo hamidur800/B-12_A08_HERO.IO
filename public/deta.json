@@ -1,0 +1,219 @@
+[
+  {
+    "id": 1,
+    "image": "/images/forest.png",
+    "title": "Forest: Focus For Productivity",
+    "companyName": "SeekrTech",
+    "description": "Stay focused and be productive by planting trees whenever you concentrate.",
+    "size": 120,
+    "reviews": 526000,
+    "ratingAvg": 4.7,
+    "downloads": 2,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 9000 },
+      { "name": "3 star", "count": 12000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 432000 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "/images/smartplan.png",
+    "title": "SmPlan: ToDo List With Reminder",
+    "companyName": "SmartPlan Co.",
+    "description": "Organize your tasks efficiently and never miss any important schedule.",
+    "size": 95,
+    "reviews": 198000,
+    "ratingAvg": 4.5,
+    "downloads": 1,
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 52000 },
+      { "name": "5 star", "count": 121000 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "/images/flip.png",
+    "title": "FLIP - Focus Timer For Study",
+    "companyName": "RinaSoft",
+    "description": "Boost your study sessions using Pomodoro-style focus timer with community ranking.",
+    "size": 110,
+    "reviews": 382000,
+    "ratingAvg": 4.8,
+    "downloads": 6,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 8000 },
+      { "name": "4 star", "count": 45000 },
+      { "name": "5 star", "count": 323000 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "/images/pomocat.png",
+    "title": "Pomocat - Cute Pomodoro Timer",
+    "companyName": "CatDev Studio",
+    "description": "Stay productive with adorable cats that grow as you finish your focus sessions.",
+    "size": 85,
+    "reviews": 146000,
+    "ratingAvg": 4.6,
+    "downloads": 8,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 5000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 33000 },
+      { "name": "5 star", "count": 96000 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "/images/timeplanner.png",
+    "title": "Time Planner: Schedule & Tasks",
+    "companyName": "TimeFlow Inc.",
+    "description": "Plan your daily, weekly, and monthly schedules effectively and visualize progress.",
+    "size": 150,
+    "reviews": 245000,
+    "ratingAvg": 4.4,
+    "downloads": 11,
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 65000 },
+      { "name": "5 star", "count": 149000 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "/images/morninghabits.png",
+    "title": "Morning Habits - Daily Routine",
+    "companyName": "Habitify",
+    "description": "Build healthy morning routines to start your day with energy and focus.",
+    "size": 130,
+    "reviews": 187000,
+    "ratingAvg": 4.3,
+    "downloads": 9,
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 6000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 45000 },
+      { "name": "5 star", "count": 118000 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "/images/focusplant.png",
+    "title": "Focus Plant: Pomodoro Forest",
+    "companyName": "Shikudo Studio",
+    "description": "Grow your digital forest by focusing and staying away from your phone.",
+    "size": 140,
+    "reviews": 312000,
+    "ratingAvg": 4.9,
+    "downloads": 2,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 7000 },
+      { "name": "4 star", "count": 50000 },
+      { "name": "5 star", "count": 250000 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "/images/alarmy.png",
+    "title": "Alarmy - Alarm Clock & Sleep",
+    "companyName": "Delight Room Co.",
+    "description": "A powerful alarm app designed to wake you up completely with fun challenges.",
+    "size": 100,
+    "reviews": 455000,
+    "ratingAvg": 4.8,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 12000 },
+      { "name": "4 star", "count": 60000 },
+      { "name": "5 star", "count": 371000 }
+    ]
+  },
+  
+  {
+    "id": 9,
+    "image": "/images/notedesk.png",
+    "title": "NoteDesk - Smart Notes Organizer",
+    "companyName": "MindSpark Labs",
+    "description": "Capture your thoughts, ideas, and to-do lists in one intelligent workspace.",
+    "size": 90,
+    "reviews": 216000,
+    "ratingAvg": 4.6,
+    "downloads": 4,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 9000 },
+      { "name": "4 star", "count": 45000 },
+      { "name": "5 star", "count": 156000 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "/images/focusmate.png",
+    "title": "FocusMate - Virtual Study Partner",
+    "companyName": "FocusLabs",
+    "description": "Pair up with accountability partners and achieve your goals together in real time.",
+    "size": 105,
+    "reviews": 173000,
+    "ratingAvg": 4.7,
+    "downloads": 7,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 5000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 36000 },
+      { "name": "5 star", "count": 120000 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "/images/dailyzen.png",
+    "title": "DailyZen - Mindful Meditation",
+    "companyName": "CalmTech Studio",
+    "description": "Find peace and focus through guided meditations and breathing exercises.",
+    "size": 130,
+    "reviews": 254000,
+    "ratingAvg": 4.8,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 6000 },
+      { "name": "3 star", "count": 12000 },
+      { "name": "4 star", "count": 52000 },
+      { "name": "5 star", "count": 181000 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "/images/workflow.png",
+    "title": "WorkFlowy - Notes & Brainstorm",
+    "companyName": "WorkFlowy Inc.",
+    "description": "An infinite notebook for capturing ideas, planning projects, and managing life.",
+    "size": 115,
+    "reviews": 289000,
+    "ratingAvg": 4.5,
+    "downloads": 9,
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 16000 },
+      { "name": "4 star", "count": 60000 },
+      { "name": "5 star", "count": 202000 }
+    ]
+  }
+]
