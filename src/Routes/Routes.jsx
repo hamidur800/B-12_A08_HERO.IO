@@ -5,7 +5,6 @@ import Erorrpage from "../pages/ErorrPage/Erorrpage";
 import Home from "../pages/Home/Home";
 import App from "../pages/App/App";
 import Install from "../pages/Installapp/Install";
-import { HiH2 } from "react-icons/hi2";
 
 export const router = createBrowserRouter([
   {
@@ -17,15 +16,12 @@ export const router = createBrowserRouter([
         index: true,
         path: "/",
         loader: () => fetch("deta.json"),
-        element: (
-          <Suspense fallback={<Erorrpage></Erorrpage>}>
-            <Home></Home>
-          </Suspense>
-        ),
+        Component: Home,
       },
       {
         index: true,
         path: "app",
+        loader: () => fetch("deta.json"),
         Component: App,
       },
       {
