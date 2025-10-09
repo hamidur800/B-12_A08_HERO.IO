@@ -8,3 +8,7 @@
   color: transparent;
   -webkit-text-fill-color: transparent;
 }
+
+.big-loader {
+  font-size: 500px !important;
+}

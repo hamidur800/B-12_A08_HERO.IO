@@ -7,7 +7,7 @@ export class Footer extends Component {
   render() {
     return (
       <div>
-        <footer className="bg-[#001931] text-white py-12 px-6 mt-16">
+        <footer className="bg-[#001931] text-white py-12 px-6 ">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
             {/* Brand */}
             <div>

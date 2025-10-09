@@ -4,6 +4,7 @@ import apple from "../../../public/a-stor.png";
 import hero from "../../../public/hero.png";
 
 import React from "react";
+import App from "../App/App";
 
 const Home = () => {
   const data = useLoaderData();
@@ -104,7 +105,7 @@ const Home = () => {
             Explore All Trending Apps on the Market developed by us
           </h4>
         </div>
-        <div className="grid grid-cols-4 gap-6 max-w-11/12 mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-11/12 mx-auto">
           {data.map((data) => (
             <div key={data.id} className=" bg-white rounded-xl shadow p-3">
               {/* Image Placeholder */}
@@ -155,8 +156,8 @@ const Home = () => {
           ))}
         </div>
         <div className="flex items-center justify-center mt-10">
-          <div className="bg-gradient-to-tl from-[#9F62F2] to-[#632EE3] py-2 px-3 rounded-sm text-white href=">
-            <NavLink>Show All</NavLink>
+          <div className="bg-gradient-to-tl from-[#9F62F2] to-[#632EE3] py-2 px-3 rounded-sm text-white mb-5">
+            <NavLink to={"App"}>Show All</NavLink>
           </div>
         </div>
       </div>
