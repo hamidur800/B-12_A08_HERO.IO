@@ -45,7 +45,7 @@ export default function Appdetails() {
     if (!exists) {
       installedApps.push(sDeta);
       localStorage.setItem("installedApps", JSON.stringify(installedApps));
-      toast.success("✅ App Installed Successfully!");
+      toast.success("App Installed Successfully!");
       setInstalled(true);
     }
   };
@@ -98,16 +98,13 @@ export default function Appdetails() {
             <button
               onClick={handleInstall}
               disabled={installed}
-              className={`mt-5 px-6 py-2 rounded-lg text-white ${
+              className={`mt-5 px-6 py-2 bg-green-600 text-white rounded-md font-semibold hover:bg-green-700 transition-all ${
                 installed
                   ? "bg-gray-400 cursor-not-allowed"
                   : "bg-blue-500 hover:bg-blue-600"
               }`}
             >
-              {installed ? "Installed" : "Install"}
-            </button>
-            <button className="mt-5 px-6 py-2 bg-green-600 text-white rounded-md font-semibold hover:bg-green-700 transition-all">
-              Install Now ({sDeta.size} MB)
+              {installed ? `Installed` : `Install (${sDeta.size} MB)`}
             </button>
           </div>
         </div>
