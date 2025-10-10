@@ -1,6 +1,8 @@
 import { Star, Download, Users } from "lucide-react";
 
 import { Link, useLoaderData, useParams } from "react-router";
+import toast from "react-hot-toast";
+import { useState, useEffect } from "react";
 
 import {
   BarChart,
@@ -19,6 +21,7 @@ export default function Appdetails() {
 
   const sDeta = data.find((app) => app.id === appId);
   console.log(sDeta);
+  const [installed, setInstalled] = useState(false);
 
   const { ratings } = sDeta;
   console.log(ratings);
@@ -26,6 +29,26 @@ export default function Appdetails() {
     name: r.name,
     value: r.count,
   }));
+
+  useEffect(() => {
+    const installedApps =
+      JSON.parse(localStorage.getItem("installedApps")) || [];
+    const exists = installedApps.find((item) => item.id === sDeta.id);
+    if (exists) setInstalled(true);
+  }, [sDeta.id]);
+
+  const handleInstall = () => {
+    const installedApps =
+      JSON.parse(localStorage.getItem("installedApps")) || [];
+    const exists = installedApps.find((item) => item.id === sDeta.id);
+
+    if (!exists) {
+      installedApps.push(sDeta);
+      localStorage.setItem("installedApps", JSON.stringify(installedApps));
+      toast.success("✅ App Installed Successfully!");
+      setInstalled(true);
+    }
+  };
   return (
     <div className="bg-[#D9D9D9]">
       <div className="py-6 max-w-11/12 mx-auto">
@@ -72,6 +95,17 @@ export default function Appdetails() {
               </div>
             </div>
 
+            <button
+              onClick={handleInstall}
+              disabled={installed}
+              className={`mt-5 px-6 py-2 rounded-lg text-white ${
+                installed
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-blue-500 hover:bg-blue-600"
+              }`}
+            >
+              {installed ? "Installed" : "Install"}
+            </button>
             <button className="mt-5 px-6 py-2 bg-green-600 text-white rounded-md font-semibold hover:bg-green-700 transition-all">
               Install Now ({sDeta.size} MB)
             </button>
