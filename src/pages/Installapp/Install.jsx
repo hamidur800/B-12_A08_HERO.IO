@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
+import { FaArrowCircleDown } from "react-icons/fa";
 
 export default function Install() {
   const [apps, setApps] = useState([]);
-  const [sortOrder, setSortOrder] = useState("default");
 
   // Load installed apps
   useEffect(() => {
@@ -20,8 +20,11 @@ export default function Install() {
     toast.success("🗑️ App Uninstalled Successfully!");
   };
 
-  // Sort function
+  const [sortOrder, setSortOrder] = useState("default");
+
   const handleSort = (order) => {
+    setSortOrder(order);
+    console.log("Sorting by:", order);
     let sorted = [...apps];
 
     if (order === "low-high") {
@@ -44,7 +47,7 @@ export default function Install() {
 
   return (
     <div className="bg-[#D9D9D9]">
-      <div className="max-w-5xl mx-auto py-10">
+      <div className="max-w-11/12 mx-auto py-10">
         <div className="text-center max-w-11/12 mx-auto py-10">
           <h2 className="font-bold text-5xl">Your Installed Apps</h2>
           <h4 className="text-xl text-[#627382] pt-2">
@@ -52,18 +55,51 @@ export default function Install() {
           </h4>
         </div>
         {/* Sort Bar */}
-        <div className="flex justify-between items-center mb-6">
+        <div className="flex justify-between items-center mb-6 max-w-11/12 mx-auto">
           <h2 className="text-2xl font-semibold">{apps.length} Apps Found</h2>
 
-          <select
-            value={sortOrder}
-            onChange={(e) => handleSort(e.target.value)}
-            className="border border-gray-300 rounded-lg px-3 py-2 text-gray-700"
-          >
-            <option value="default">Sort By</option>
-            <option value="low-high">Low → High</option>
-            <option value="high-low">High → Low</option>
-          </select>
+          <div className="dropdown dropdown-start">
+            {/* Dropdown Button */}
+            <div
+              tabIndex={0}
+              role="button"
+              className="border rounded-lg px-3 py-2 text-gray-700 cursor-pointer w-36 flex items-center justify-between"
+            >
+              {sortOrder === "low-high" ? (
+                "Low → High"
+              ) : sortOrder === "high-low" ? (
+                "High → Low"
+              ) : (
+                <>
+                  Sort By
+                  <FaArrowCircleDown className="" />
+                </>
+              )}
+            </div>
+
+            {/* Dropdown Menu */}
+            <ul
+              tabIndex={0}
+              className="dropdown-content menu bg-base-100 rounded-box z-[1] w-36 p-2 shadow"
+            >
+              <li>
+                <button
+                  onClick={() => handleSort("low-high")}
+                  className={`${sortOrder === "low-high" ? "bg-blue-100" : ""}`}
+                >
+                  Low → High
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleSort("high-low")}
+                  className={`${sortOrder === "high-low" ? "bg-blue-100" : ""}`}
+                >
+                  High → Low
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Installed Apps Grid */}

@@ -57,13 +57,42 @@ export class Header extends Component {
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 text-[16px] font-medium">
               <li>
-                <NavLink to={"/"}>Home</NavLink>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-blue-600 border-b-2 border-blue-600 pb-1"
+                      : "text-gray-700 hover:text-blue-500"
+                  }
+                >
+                  Home
+                </NavLink>
               </li>
+
               <li>
-                <NavLink to={"App"}>Apps</NavLink>
+                <NavLink
+                  to="/App"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-blue-600 border-b-2 border-blue-600 pb-1"
+                      : "text-gray-700 hover:text-blue-500"
+                  }
+                >
+                  Apps
+                </NavLink>
               </li>
+
               <li>
-                <NavLink to={"Install"}>Installation</NavLink>
+                <NavLink
+                  to="/Install"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-blue-600 border-b-2 border-blue-600 pb-1"
+                      : "text-gray-700 hover:text-blue-500"
+                  }
+                >
+                  Installation
+                </NavLink>
               </li>
             </ul>
           </div>

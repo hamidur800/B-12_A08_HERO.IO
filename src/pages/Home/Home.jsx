@@ -32,7 +32,7 @@ const Home = () => {
 
             <div className="flex items-center justify-center gap-6 py-10">
               <NavLink
-                className="flex items-center border border-[#e6e6e6] p-2 rounded-[4px]"
+                className="flex items-center bg-white shadow-xl border border-gray-400 py-2 px-3 rounded-[4px]"
                 to="https://play.google.com/"
               >
                 <span className="mr-2">
@@ -41,7 +41,7 @@ const Home = () => {
                 <span>Google Play</span>
               </NavLink>
               <NavLink
-                className="flex items-center border border-[#e6e6e6] p-2 rounded-[4px]"
+                className="flex items-center bg-white shadow-xl border border-gray-400 py-2 px-3 rounded-[4px]"
                 to="https://www.apple.com/app-store/"
               >
                 <span className="mr-2">
