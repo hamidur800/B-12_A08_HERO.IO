@@ -1,9 +1,6 @@
-# MyWebsite — HOME NEST
+# MyWebsite — HERO.IO
+## Just light-Mode Use
 
-## light-Mode
-![Project Screenshot](https://github.com/hamidur800/b_12-a_10-client_side/blob/main/light-mode.png)
-## Dark-Mode
-![Project Screenshot](https://github.com/hamidur800/b_12-a_10-client_side/blob/main/dark-mode.png)
 
 ## Project Overview
 MyWebsite is a modern, responsive web application that helps users manage tasks, collaborate with teammates, and track progress — fast and simply.
@@ -12,7 +9,6 @@ MyWebsite is a modern, responsive web application that helps users manage tasks,
 - React.js
 - Tailwind CSS
 - Firebase (Authentication)
-- Database (mongodb atlas)
 - React Router (Private/Protected Routes)
 - OAuth (Google Login)
 
@@ -21,7 +17,6 @@ MyWebsite is a modern, responsive web application that helps users manage tasks,
 2. Authentication system with user profiles and OAuth (Google).
 3. Powerful search and filter options to quickly find important content.
 4. Private Route (Protected Route) to allow access only after login.
-5. Full CRUD operations (GET, POST, PUT, DELETE) for managing data.
 
 ## Dependencies
 ```Bash
@@ -56,11 +51,11 @@ MyWebsite is a modern, responsive web application that helps users manage tasks,
 ## Installation and Running Locally
 1. Clone the repository  
    ```bash
-   git clone https://github.com/hamidur800/b_12-a_10-client_side.git
+    https://github.com/hamidur800/B-12_A08_HERO.IO.git
    ```
 2. Navigate to the project directory  
    ```bash
-   cd b_12-a_10-client_side
+   cd B-12_A08_HERO.IO
    ```
 3. Install dependencies  
    ```bash
@@ -73,7 +68,7 @@ MyWebsite is a modern, responsive web application that helps users manage tasks,
 5. Open [http://localhost:5173](http://localhost:5173) in your browser
 
 ## Live Link
-[https://b-12-a10-client.netlify.app/](https://b-12-a10-client.netlify.app/)
+[https://b-12-a-08.netlify.app](https://b-12-a-08.netlify.app)
 
 
 
